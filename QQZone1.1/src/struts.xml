@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true" />
+
+    <package name="default" namespace="/" extends="struts-default">
+		<global-results>
+			<result name="failed"  type="redirect" >login.jsp</result>
+			<result name="success" type="redirect" >index.jsp</result>
+			<result name="topicItem" type="chain" >topicItem</result>
+		</global-results>
+	
+		<action name="addFriend" class="com.qqzone.action.AddFriend" >
+		</action>
+		
+		<action name="login" class="com.qqzone.action.Login" >
+			<result name="topic" type="chain">topic</result>
+		</action>
+		
+		<action name="addTopic" class="com.qqzone.action.AddTopic" >
+		</action>
+		
+		<action name="topicItem" class="com.qqzone.action.TopicItem" >
+			<result name="topic">topic.jsp</result>
+		</action>
+		
+		<action name="deleteHostReply" class="com.qqzone.action.DeleteHostReply" >
+		</action>
+		<action name="deleteReply" class="com.qqzone.action.DeleteReply" >
+		</action>
+		<action name="deleteTopic" class="com.qqzone.action.DeleteTopic" >
+		</action>
+		<action name="topic" class="com.qqzone.action.TopicAction" >
+		</action>
+		<action name="reply" class="com.qqzone.action.ReplyAction" >
+		</action>
+		<action name="hostReply" class="com.qqzone.action.HostReplyAction" >
+		</action>
+
+		<action name="regist" class="com.qqzone.action.Regist" >
+		</action>
+		
+		<action name="updateInfo" class="com.qqzone.action.UpdateInfo" >
+			<result name="updateInfo" type="redirect" >updateInfo.jsp</result>
+		</action>
+		
+    </package>
+
+
+
+</struts>

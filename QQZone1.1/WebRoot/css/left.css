@@ -1,0 +1,19 @@
+html, head, body {
+	margin-left: 0px;
+	margin-top: 0px;
+}
+body{
+	background-color: menu;
+}
+
+td {
+	margin-left: 30px;
+}
+
+.tbl_friends{
+	width: 300px;
+}
+.div_space{
+	width: 98%;
+	height: 40px;
+}

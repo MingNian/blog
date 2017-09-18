@@ -1,0 +1,16 @@
+.div_update_info{
+	width: 500px;
+	height: 500px;
+	background-color: menu;
+	margin-left: 100px;
+}
+.tbl_update_info{
+	width: 400;
+	height: 400;
+	margin-left: 50px;
+	top: 50px;
+}
+.div_margin{
+	width: 399px;
+	height: 50px;
+}

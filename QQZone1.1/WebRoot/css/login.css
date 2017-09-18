@@ -1,0 +1,41 @@
+body {
+	
+}
+
+.login_div {
+	width: 300px;
+	height: 180px;
+	background-color: menu;
+}
+
+.login_class {
+	width: 90%;
+	height: 90%;
+	margin-left: 5%;
+	margin-top: 5%;
+}
+
+.login_form {
+	width: 90%;
+	height: 90%;
+	margin-left: 5%;
+	margin-top: 5%;
+}
+
+.inputs {
+	width: 124px;
+	height: 20px;
+}
+.btn1{
+	margin-left: 10px;
+}
+.btn2{
+	margin-left: 50px;
+}
+.div_btn{
+	width: 100%;
+	height: 100%;
+}
+tbl,tr,td{
+	text-align: center;
+}
